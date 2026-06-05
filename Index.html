@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ГО «Фонд оновлення горизонту» | Horizon Renewal Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandBg: '#FAF9F6',
+                        brandPrimary: '#1E3D59',
+                        brandAccent: '#3FA89E',
+                        brandText: '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Urbanist', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #FAF9F6; color: #334155; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #1E3D59; }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F6]/95 backdrop-blur-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <a href="#" class="flex items-center gap-4">
+                    <img src="logo.png" alt="HRF Logo" class="h-16 w-auto object-contain">
+                    <div class="hidden lg:flex flex-col border-l border-gray-300 pl-4">
+                        <span class="text-sm font-extrabold text-brandPrimary tracking-tight uppercase leading-tight">Фонд оновлення горизонту</span>
+                        <span class="text-[10px] text-brandAccent font-bold tracking-widest uppercase">Horizon Renewal Foundation</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-brandPrimary hover:text-brandAccent font-bold text-sm transition-colors uppercase tracking-wider">Про нас</a>
+                    <a href="#program" class="text-brandPrimary hover:text-brandAccent font-bold text-sm transition-colors uppercase tracking-wider">Програма</a>
+                    <a href="#team" class="text-brandPrimary hover:text-brandAccent font-bold text-sm transition-colors uppercase tracking-wider">Команда</a>
+                    <a href="#support" class="text-brandPrimary hover:text-brandAccent font-bold text-sm transition-colors uppercase tracking-wider">Допомогти</a>
+                </nav>
+
+                <div class="hidden md:block">
+                    <a href="#support" class="bg-brandAccent text-white px-6 py-3 rounded-xl font-extrabold text-sm hover:bg-[#348e85] shadow-lg transition-all transform hover:-translate-y-1">
+                        ПІДТРИМАТИ
+                    </a>
+                </div>
+
+                <button id="mobile-menu-button" class="md:hidden text-brandPrimary p-2">
+                    <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brandBg border-b border-gray-200 px-4 py-6 space-y-4 shadow-xl">
+            <a href="#about" class="block font-bold text-brandPrimary uppercase tracking-widest">Про нас</a>
+            <a href="#program" class="block font-bold text-brandPrimary uppercase tracking-widest">Програма</a>
+            <a href="#team" class="block font-bold text-brandPrimary uppercase tracking-widest">Команда</a>
+            <a href="#support" class="block font-bold text-brandAccent uppercase tracking-widest">Допомогти</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 lg:py-24 px-4 bg-gradient-to-br from-brandBg to-brandAccent/5">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 text-center lg:text-left">
+                    <div class="inline-block bg-brandPrimary text-white px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-[0.2em]">
+                        Horizon Renewal Foundation
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black leading-[1.1] tracking-tighter uppercase">
+                        Горизонт оновлення:<br>
+                        <span class="text-brandAccent">назустріч новому життю</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-brandText leading-relaxed font-medium">
+                        Фундація, що ставить за мету допомогу ветеранам та військовослужбовцям у адаптації до мирного життя, надаючи комплексну психологічну та фізичну підтримку.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#program" class="bg-brandPrimary text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-brandText transition-all shadow-xl">
+                            Програма відновлення
+                        </a>
+                        <a href="https://t.me/+380938315415" target="_blank" class="border-2 border-brandAccent text-brandAccent px-8 py-4 rounded-xl font-bold text-lg hover:bg-brandAccent hover:text-white transition-all">
+                            <i class="fa-brands fa-telegram mr-2"></i>Написати нам
+                        </a>
+                    </div>
+                </div>
+                <div class="relative flex justify-center">
+                    <img src="logo.png" alt="Main Brand Image" class="w-full max-w-md drop-shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-white border-y border-gray-100 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-6">
+                        <span class="text-brandAccent uppercase tracking-[0.2em] text-[10px] font-black block">Про нас та формат</span>
+                        <h2 class="text-4xl font-black uppercase tracking-tighter">Повне занурення <br>у процес відновлення</h2>
+                        <div class="h-1.5 w-24 bg-brandAccent rounded-full"></div>
+                        <p class="text-brandText text-lg leading-relaxed font-medium">
+                            Програма "Горизонт оновлення" розроблена як інтенсивний 10-денний стаціонарний курс на базі приватного комплексу у <strong>с. Глібівка</strong>. Цей формат дозволяє мінімізувати вплив зовнішніх тригерів та зосередитися на системній роботі.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 h-full items-stretch">
+                        <div class="bg-brandBg p-8 rounded-3xl border-l-4 border-brandPrimary shadow-sm flex flex-col justify-center">
+                            <h3 class="text-xl font-black mb-3 uppercase">Ветерани</h3>
+                            <p class="text-brandText text-base font-normal">Для тих, хто завершив службу та повертається до цивільного життя. Допомога в адаптації та пошуку нової ідентичності.</p>
+                        </div>
+                        <div class="bg-brandBg p-8 rounded-3xl border-l-4 border-brandAccent shadow-sm flex flex-col justify-center">
+                            <h3 class="text-xl font-black mb-3 uppercase">Військовослужбовці</h3>
+                            <p class="text-brandText text-base font-normal">Для діючих військових у відпустці для лікування або реабілітації. Простір для відновлення фізичного та ментального здоров'я.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="program" class="py-24 bg-white px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16 border-l-8 border-brandAccent pl-8">
+                    <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tighter mb-4">Детальна програма курсу</h2>
+                    <p class="text-xl font-bold text-brandPrimary uppercase mt-2 leading-tight">10 календарних днів інтенсивної реінтеграції та системної роботи</p>
+                </div>
+
+                <div class="mb-12 bg-brandBg rounded-[2.5rem] p-8 lg:p-14 border border-gray-200">
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="bg-brandPrimary text-white text-xs uppercase font-black px-5 py-2 rounded-xl">Етап I</span>
+                        <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-tight">Переосмислення досвіду (Дні 1–3)</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 1</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Реінтеграція ідентичності</h4>
+                            <p class="text-base text-brandText leading-relaxed">Аналіз відмінностей між військовим та цивільним менталітетом. Розуміння того, чому мозок продовжує автоматично шукати загрозу у мирному житті.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 2</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Тригери та контроль</h4>
+                            <p class="text-base text-brandText leading-relaxed">Розпізнавання тригерів, що виникають через роки після служби. Навчання практичним методам управління стресовими реакціями.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 3</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Тіло як ресурс</h4>
+                            <p class="text-base text-brandText leading-relaxed">Практика з фізичним терапевтом: дихальні вправи, мобілізація та відновлення зв'язку між розумом і тілом на клітинному рівні.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-12 bg-brandBg rounded-[2.5rem] p-8 lg:p-14 border border-gray-200">
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="bg-brandAccent text-white text-xs uppercase font-black px-5 py-2 rounded-xl">Етап II</span>
+                        <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-tight">Глибоке опрацювання травми (Дні 4–7)</h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border-b-4 border-brandPrimary">
+                            <span class="text-brandAccent font-black text-xs uppercase mb-3 block">День 4</span>
+                            <h4 class="font-black text-brandPrimary mb-3 uppercase text-sm">Моральна травма</h4>
+                            <p class="text-sm text-brandText leading-relaxed">Опрацювання відчуття провини та складних дилем. Пошук прийняття минулого без саморуйнівних патернів.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border-b-4 border-brandPrimary">
+                            <span class="text-brandAccent font-black text-xs uppercase mb-3 block">День 5</span>
+                            <h4 class="font-black text-brandPrimary mb-3 uppercase text-sm">Управління агресією</h4>
+                            <p class="text-sm text-brandText leading-relaxed">Навчання методам безпечної "вентиляції" гніву та самоконтролю імпульсивних реакцій у соціумі.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border-b-4 border-brandPrimary">
+                            <span class="text-brandAccent font-black text-xs uppercase mb-3 block">День 6</span>
+                            <h4 class="font-black text-brandPrimary mb-3 uppercase text-sm">Аддиктивна поведінка</h4>
+                            <p class="text-sm text-brandText leading-relaxed">Робота із залежностями як спробами тамувати біль. Пошук здорових джерел адреналіну та реалізації.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded-3xl shadow-sm border-b-4 border-brandPrimary">
+                            <span class="text-brandAccent font-black text-xs uppercase mb-3 block">День 7</span>
+                            <h4 class="font-black text-brandPrimary mb-3 uppercase text-sm">Емоційна регуляція</h4>
+                            <p class="text-sm text-brandText leading-relaxed">Розвиток емоційного інтелекту, адекватне реагування на нерозуміння та ідентифікація власних почуттів.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brandBg rounded-[2.5rem] p-8 lg:p-14 border border-gray-200">
+                    <div class="flex items-center gap-4 mb-10">
+                        <span class="bg-brandPrimary text-white text-xs uppercase font-black px-5 py-2 rounded-xl">Етап III</span>
+                        <h3 class="text-2xl sm:text-3xl font-black uppercase tracking-tight leading-tight">Реінтеграція та майбутнє (Дні 8–10)</h3>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 8</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Комунікація з рідними</h4>
+                            <p class="text-base text-brandText leading-relaxed">Подолання емоційної глухоти. Відновлення довіри та вивчення сімейного конфлікт-менеджменту.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 9</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Цінності та місія</h4>
+                            <p class="text-base text-brandText leading-relaxed">Формування нових життєвих орієнтирів. Пошук власної місії в освіті, роботі чи громадському секторі.</p>
+                        </div>
+                        <div class="bg-white p-8 rounded-3xl shadow-sm border-b-4 border-brandAccent">
+                            <span class="text-brandAccent font-black text-sm uppercase mb-3 block">День 10</span>
+                            <h4 class="font-black text-brandPrimary mb-4 uppercase text-base">Якорі реінтеграції</h4>
+                            <p class="text-base text-brandText leading-relaxed">Підбиття підсумків, закріплення отриманих навичок та формування мережі довгострокової підтримки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="py-24 bg-brandBg px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20 space-y-6">
+                    <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tighter">Команда професіоналів</h2>
+                    <p class="text-xl text-brandText max-w-3xl mx-auto font-medium leading-relaxed">Наш успіх базується на щоденній злагодженій роботі висококваліфікованих фахівців: психотерапевтів, фізичних терапевтів та реабілітологів.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
+                    <div class="flex flex-col sm:flex-row items-center gap-8 p-10 rounded-[2.5rem] bg-white shadow-lg border border-gray-100 transition-transform hover:scale-[1.02]">
+                        <div class="w-28 h-28 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-4xl shrink-0 shadow-xl">АП</div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-2xl font-black text-brandPrimary mb-2 leading-tight">Пархоменко Арсен Володимирович</h4>
+                            <p class="text-xs text-brandAccent font-black uppercase tracking-widest mb-4">Керівник проєкту</p>
+                            <a href="tel:0990690997" class="text-xl font-bold text-brandPrimary underline decoration-brandAccent decoration-4 underline-offset-4">099 069 0997</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row items-center gap-8 p-10 rounded-[2.5rem] bg-white shadow-lg border border-gray-100 transition-transform hover:scale-[1.02]">
+                        <div class="w-28 h-28 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-4xl shrink-0 shadow-xl">ВФ</div>
+                        <div class="text-center sm:text-left">
+                            <h4 class="text-2xl font-black text-brandPrimary mb-2 leading-tight">Філіппов Володимир Вікторович</h4>
+                            <p class="text-xs text-brandAccent font-black uppercase tracking-widest mb-4">Керівник проєкту</p>
+                            <a href="tel:0671562727" class="text-xl font-bold text-brandPrimary underline decoration-brandAccent decoration-4 underline-offset-4">067 156 2727</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="py-24 bg-brandPrimary text-white px-4 overflow-hidden relative">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-6 space-y-8">
+                    <h2 class="text-4xl sm:text-6xl font-black uppercase tracking-tighter leading-tight">Підтримати <br>діяльність фонду</h2>
+                    <p class="text-brandBg/80 text-xl font-medium leading-relaxed">
+                        Програма є повністю безкоштовною для учасників. Кожен ваш благодійний внесок — це реальна можливість для ще одного захисника повернутися до повноцінного життя.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="https://send.monobank.ua/jar/4PmMFQqciz" target="_blank" class="bg-[#ff5252] hover:bg-white hover:text-[#ff5252] text-white px-10 py-5 rounded-2xl font-black text-center transition-all shadow-2xl flex items-center justify-center gap-3 uppercase tracking-wider">
+                            <i class="fa-solid fa-jar text-2xl"></i> Банка Monobank
+                        </a>
+                        <a href="https://t.me/+380938315415" target="_blank" class="bg-brandAccent hover:bg-white hover:text-brandAccent text-white px-10 py-5 rounded-2xl font-black text-center transition-all shadow-2xl flex items-center justify-center gap-3 uppercase tracking-wider">
+                            <i class="fa-brands fa-telegram text-2xl"></i> Telegram-чат
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 bg-white rounded-[2.5rem] p-10 sm:p-14 text-brandPrimary shadow-2xl border-t-[12px] border-brandAccent">
+                    <h3 class="text-3xl font-black uppercase mb-10 border-b-4 border-gray-100 pb-6 tracking-tight">Офіційні реквізити</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <span class="text-[11px] font-black uppercase text-brandText/60 block tracking-widest mb-1">Отримувач</span>
+                            <span class="font-black text-lg">ГО ФОНД ОНОВЛЕННЯ ГОРИЗОНТУ</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-8">
+                            <div>
+                                <span class="text-[11px] font-black uppercase text-brandText/60 block tracking-widest mb-1">Код ЄДРПОУ</span>
+                                <span class="font-black text-lg">46019955</span>
+                            </div>
+                            <div>
+                                <span class="text-[11px] font-black uppercase text-brandText/60 block tracking-widest mb-1">Банк</span>
+                                <span class="font-black text-lg italic">ПриватБанк</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="text-[11px] font-black uppercase text-brandText/60 block tracking-widest mb-2">Рахунок IBAN</span>
+                            <span class="font-mono font-bold text-base block bg-brandBg p-5 rounded-2xl border-2 border-dashed border-gray-300 select-all tracking-tight break-all">UA683052990000026004025047542</span>
+                        </div>
+                        <div class="pt-4">
+                            <a href="https://send.monobank.ua/jar/4PmMFQqciz" target="_blank" class="text-brandAccent font-black text-lg hover:underline underline-offset-8 flex items-center gap-3">
+                                <i class="fa-solid fa-link"></i> Надіслати внесок через Monobank
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brandPrimary text-brandBg py-16 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-center md:text-left">
+            <div>
+                <img src="logo.png" alt="Foundation Logo" class="h-16 w-auto mb-6 filter brightness-0 invert mx-auto md:mx-0">
+                <p class="text-xs font-bold text-brandBg/60 uppercase tracking-widest">© 2026 Horizon Renewal Foundation</p>
+            </div>
+            
+            <div class="flex justify-center gap-10">
+                <a href="https://www.facebook.com/profile.php?id=61590263355683" target="_blank" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-brandAccent hover:bg-brandAccent hover:text-white transition-all">
+                    <i class="fa-brands fa-facebook-f text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/horyzont.onovlennia?igsh=dGVrZnB5bDIxc2Ft&utm_source=qr" target="_blank" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-brandAccent hover:bg-brandAccent hover:text-white transition-all">
+                    <i class="fa-brands fa-instagram text-xl"></i>
+                </a>
+                <a href="https://t.me/+380938315415" target="_blank" class="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center text-brandAccent hover:bg-brandAccent hover:text-white transition-all">
+                    <i class="fa-brands fa-telegram text-xl"></i>
+                </a>
+            </div>
+
+            <div class="space-y-3">
+                <p class="font-bold uppercase text-[10px] tracking-widest text-brandBg/60 mb-2">Співпраця та запити:</p>
+                <a href="mailto:horizonrfoundation@gmail.com" class="text-brandAccent font-black text-base block hover:underline underline-offset-4">horizonrfoundation@gmail.com</a>
+                <p class="text-lg font-bold text-white"><span class="text-brandAccent font-medium text-sm mr-1">моб. тел.:</span> 093 831 5415</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                icon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(l => {
+            l.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                icon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+    </script>
+</body>
+</html>
