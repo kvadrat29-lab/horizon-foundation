@@ -119,14 +119,14 @@
                         
                         <div class="flex flex-col gap-6 text-left">
                             <div class="bg-brandBg p-8 rounded-3xl border-l-4 border-brandPrimary shadow-sm transition-transform hover:scale-[1.01]">
-                                <h4 class="text-xl font-black mb-3 uppercase text-brandPrimary">Ветерани</h4>
+                                <h4 class="text-xl font-black mb-3 uppercase text-brandPrimary">Ветеранів</h4>
                                 <p class="text-brandText text-base font-normal">
                                     Для тих, хто завершив службу та повертається до цивільного життя. Допомога у переорієнтації, адаптації та пошуку нової ідентичності.
                                 </p>
                             </div>
                             
                             <div class="bg-brandBg p-8 rounded-3xl border-l-4 border-brandAccent shadow-sm transition-transform hover:scale-[1.01]">
-                                <h4 class="text-xl font-black mb-3 uppercase text-brandAccent">Військовослужбовці</h4>
+                                <h4 class="text-xl font-black mb-3 uppercase text-brandAccent">Військовослужбовців</h4>
                                 <p class="text-brandText text-base font-normal">
                                     Для діючих військовослужбовців у відпустці для лікування або реабілітації. Інтенсивна психологічна та фізична підтримка для відновлення сил.
                                 </p>
@@ -227,25 +227,60 @@
         <section id="team" class="py-24 bg-brandBg px-4">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-20 space-y-6">
-                    <h2 class="text-4xl sm:text-5xl font-black uppercase tracking-tighter">Команда професіоналів</h2>
-                    <p class="text-xl text-brandText max-w-3xl mx-auto font-medium leading-relaxed">Наш успіх базується на щоденній злагодженій роботі висококваліфікованих фахівців з психології, медицини та реабілітації.</p>
+                    <h2 class="text-5xl font-black uppercase tracking-tighter">Команда професіоналів</h2>
+                    <p class="text-2xl text-brandText max-w-4xl mx-auto font-medium leading-relaxed">Наш успіх базується на щоденній злагодженій роботі висококваліфікованих фахівців з психології, медицини та реабілітації.</p>
                 </div>
 
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-20">
+                    <div class="bg-white p-8 rounded-[2rem] shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 transition-transform hover:scale-[1.03]">
+                        <div class="w-16 h-16 rounded-2xl bg-brandPrimary/5 flex items-center justify-center text-brandPrimary text-3xl">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-brandPrimary uppercase tracking-tight">Психотерапевти</h4>
+                        <p class="text-base text-brandText leading-relaxed">Кваліфіковані психологи, які проводять щоденні індивідуальні та групові сесії для глибокого опрацювання травми.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-[2rem] shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 transition-transform hover:scale-[1.03]">
+                        <div class="w-16 h-16 rounded-2xl bg-brandAccent/5 flex items-center justify-center text-brandAccent text-3xl">
+                            <i class="fa-solid fa-person-walking"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-brandPrimary uppercase tracking-tight">Фізичні терапевти</h4>
+                        <p class="text-base text-brandText leading-relaxed">Фахівці з кінезіотерапії, що забезпечують щоденну мобілізацію тіла, дихальні практики та фізичне відновлення.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-[2rem] shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 transition-transform hover:scale-[1.03]">
+                        <div class="w-16 h-16 rounded-2xl bg-brandPrimary/5 flex items-center justify-center text-brandPrimary text-3xl">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-brandPrimary uppercase tracking-tight">Масажисти</h4>
+                        <p class="text-base text-brandText leading-relaxed">Професійний курс масажу протягом усього заїзду для зняття хронічних м'язових затисків та фізичного розвантаження.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-[2rem] shadow-md border border-gray-100 flex flex-col items-center text-center space-y-4 transition-transform hover:scale-[1.03]">
+                        <div class="w-16 h-16 rounded-2xl bg-brandAccent/5 flex items-center justify-center text-brandAccent text-3xl">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h4 class="text-xl font-black text-brandPrimary uppercase tracking-tight">Медичний супровід</h4>
+                        <p class="text-base text-brandText leading-relaxed">Цілодобове чергування медичного персоналу для моніторингу стану здоров'я та контролю виконання процедур.</p>
+                    </div>
+                </div>
+
+                <h3 class="text-3xl font-black uppercase tracking-tight text-center mb-10 text-brandPrimary">Керівництво проєкту</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto">
-                    <div class="flex flex-col sm:flex-row items-center gap-8 p-10 rounded-[2.5rem] bg-white shadow-lg border border-gray-100 transition-transform hover:scale-[1.02]">
-                        <div class="w-28 h-28 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-4xl shrink-0 shadow-xl">АП</div>
+                    <div class="flex flex-col sm:flex-row items-center gap-10 p-12 rounded-[3rem] bg-white shadow-xl border border-gray-100 transition-transform hover:scale-[1.02]">
+                        <div class="w-32 h-32 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-5xl shrink-0 shadow-2xl">АП</div>
                         <div class="text-center sm:text-left">
-                            <h4 class="text-2xl font-black text-brandPrimary mb-2 leading-tight">Пархоменко Арсен Володимирович</h4>
+                            <h4 class="text-3xl font-black text-brandPrimary mb-2 leading-tight">Пархоменко Арсен Володимирович</h4>
                             <p class="text-xs text-brandAccent font-black uppercase tracking-widest mb-4">Засновник проєкту</p>
-                            <a href="tel:0990690997" class="text-xl font-bold text-brandPrimary underline decoration-brandAccent decoration-4 underline-offset-4">099 069 0997</a>
+                            <a href="tel:0990690997" class="text-2xl font-bold text-brandPrimary underline decoration-brandAccent decoration-8 underline-offset-8 hover:text-brandAccent transition-colors">099 069 0997</a>
                         </div>
                     </div>
-                    <div class="flex flex-col sm:flex-row items-center gap-8 p-10 rounded-[2.5rem] bg-white shadow-lg border border-gray-100 transition-transform hover:scale-[1.02]">
-                        <div class="w-28 h-28 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-4xl shrink-0 shadow-xl">ВФ</div>
+                    <div class="flex flex-col sm:flex-row items-center gap-10 p-12 rounded-[3rem] bg-white shadow-xl border border-gray-100 transition-transform hover:scale-[1.02]">
+                        <div class="w-32 h-32 rounded-full bg-brandPrimary text-white flex items-center justify-center font-black text-5xl shrink-0 shadow-2xl">ВФ</div>
                         <div class="text-center sm:text-left">
-                            <h4 class="text-2xl font-black text-brandPrimary mb-2 leading-tight">Філіппов Володимир Вікторович</h4>
+                            <h4 class="text-3xl font-black text-brandPrimary mb-2 leading-tight">Філіппов Володимир Вікторович</h4>
                             <p class="text-xs text-brandAccent font-black uppercase tracking-widest mb-4">Засновник проєкту</p>
-                            <a href="tel:0671562727" class="text-xl font-bold text-brandPrimary underline decoration-brandAccent decoration-4 underline-offset-4">067 156 2727</a>
+                            <a href="tel:0671562727" class="text-2xl font-bold text-brandPrimary underline decoration-brandAccent decoration-8 underline-offset-8 hover:text-brandAccent transition-colors">067 156 2727</a>
                         </div>
                     </div>
                 </div>
